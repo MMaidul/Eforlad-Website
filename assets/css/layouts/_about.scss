@@ -1,0 +1,28 @@
+.about-section {
+  padding: 50px 0;
+  .about {
+  }
+  .about__content {
+    width: 950px;
+    border: 15px solid $primary_color;
+    border-radius: 5px;
+    padding: 90px 30px;
+    position: relative;
+    margin-top: 50px;
+  }
+  .about__content-desc {
+    width: 600px;
+    line-height: 30px;
+  }
+  .about__content-img {
+    background-size: contain;
+    background-repeat: no-repeat;
+    position: absolute;
+    top: -50px;
+    right: -300px;
+  }
+  .about__content-btn {
+    margin-top: 60px;
+    text-align: center;
+  }
+}

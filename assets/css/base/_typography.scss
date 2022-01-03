@@ -1,0 +1,25 @@
+body {
+  font-family: "Trebuchet MS", sans-serif;
+  font-size: 16px;
+  line-height: 22px;
+}
+
+$headings: (p, 16px, 22px, 400), (h6, 16px, 22px, 400), (h5, 20px, 24px, 500),
+  (h4, 24px, 28px, 600), (h3, 28px, 32px, 600), (h2, 32px, 38px, 700),
+  (h1, 40px, 48px, 700);
+
+@each $heading, $font_size, $line_height, $font_weight in $headings {
+  #{$heading} {
+    font-size: $font_size;
+    line-height: $line_height;
+    font-weight: $font_weight;
+  }
+}
+
+// $text-align;
+$text_aling: center, left, right, justify;
+@each $var in $text_aling {
+  .text-#{$var} {
+    text-align: $var;
+  }
+}

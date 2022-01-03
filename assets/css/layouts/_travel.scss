@@ -1,0 +1,24 @@
+.travel-section {
+  padding: 100px 0;
+  .travel {
+    &__single {
+      margin-top: 30px;
+      margin-right: 20px;
+      text-align: center;
+    }
+    &__single-img {
+    }
+    &__single-heading {
+      text-transform: capitalize;
+      padding-top: 20px;
+      font-weight: normal;
+      font-style: italic;
+      padding-bottom: 10px;
+    }
+    &__single-desc {
+      margin-bottom: 40px;
+    }
+    &__single-btn {
+    }
+  }
+}

@@ -1,0 +1,32 @@
+.our-blog-section {
+  padding: 100px 0;
+  .our-blog {
+    &__single {
+      margin: 0 20px;
+      position: relative;
+    }
+    &__single-img {
+      width: 100%;
+    }
+    &__single-date {
+      position: absolute;
+      top: 0;
+      left: 0;
+
+      background-color: rgba(25, 25, 54, 0.87);
+      padding: 10px 30px;
+      color: $white;
+    }
+    &__single-meta {
+      padding: 10px 0;
+    }
+    &__single-heading {
+      text-transform: capitalize;
+      font-weight: normal;
+      margin: 20px 0;
+    }
+    &__single-desc {
+      line-height: 26px;
+    }
+  }
+}

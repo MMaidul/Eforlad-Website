@@ -1,0 +1,17 @@
+.tour-section {
+  padding: 70px 0;
+  .tour {
+    &__single {
+      padding: 0 10px;
+      margin-top: 50px;
+    }
+    &__single-heading {
+      font-size: 20px;
+      font-style: italic;
+      padding: 10px 0;
+      display: block;
+    }
+    &__single-desc {
+    }
+  }
+}

@@ -1,0 +1,79 @@
+@import "./variable";
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+ul {
+  list-style-type: none;
+}
+
+img {
+  max-width: 100%;
+  vertical-align: middle;
+}
+
+a {
+  text-decoration: none;
+  color: $black;
+  transition: 0.3s;
+}
+//bg_overlay;
+.bg_overlay {
+  background-size: cover;
+  background-position: center;
+  color: $white;
+  position: relative;
+  z-index: 2;
+  ::before {
+    position: absolute;
+    content: "";
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: $black;
+    opacity: 0.1;
+    z-index: -1;
+  }
+}
+//btn;
+.btn {
+  display: inline-block;
+  text-transform: capitalize;
+  font-size: 18px;
+  border-radius: 25px;
+  &--box {
+    background-color: $primary_color;
+    color: $white;
+    padding: 15px 35px;
+    transition: 0.3s;
+    &:hover {
+      background-color: $black;
+    }
+  }
+}
+// flex;
+$flex: flex, inline-flex;
+@each $var in $flex {
+  .d-#{$var} {
+    display: $var;
+  }
+}
+
+//justify-content;
+$justify_content: start, end, center, space-between, space-around, space-evenly;
+@each $var in $justify_content {
+  .justify-content-#{$var} {
+    justify-content: $var;
+  }
+}
+
+//align-items;
+$align_items: start, end, center, space-between, space-around, space-evenly;
+@each $var in $align_items {
+  .justify-content-#{$var} {
+    justify-content: $var;
+  }
+}

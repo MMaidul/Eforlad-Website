@@ -1,0 +1,31 @@
+.header-section {
+  .header {
+    padding: 10px 0;
+    &__logo {
+    }
+    &__logo-link {
+    }
+    &__logo-img {
+    }
+    &__menu {
+      margin-top: 25px;
+    }
+    &__menu-items {
+    }
+    &__menu-item {
+    }
+    &__menu-link {
+      text-transform: capitalize;
+      margin-left: 15px;
+      font-size: 20px;
+      font-weight: 600;
+      font-style: italic;
+      color: $white;
+      transition: 1s;
+      &:hover {
+        line-height: 20px;
+        color: $primary_color;
+      }
+    }
+  }
+}
